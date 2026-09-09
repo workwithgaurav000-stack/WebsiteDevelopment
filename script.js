@@ -195,6 +195,14 @@ async function submitBooking(event) {
 
   const form = document.getElementById("bookingForm");
   const button = document.getElementById("submitBtn");
+  const emailField = document.getElementById("customerEmail");
+  const email = emailField.value.trim();
+
+  emailField.value = email;
+  emailField.setCustomValidity("");
+  if (!/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email)) {
+    emailField.setCustomValidity("Enter a valid email address, for example you@example.com.");
+  }
 
   if (!form.checkValidity()) {
     form.reportValidity();
@@ -218,7 +226,7 @@ async function submitBooking(event) {
   document.getElementById("orderDateField").value = date;
   document.getElementById("orderTimeField").value = time;
   document.getElementById("websitePriceField").value = `₹${chosen.price.toLocaleString("en-IN")}`;
-  document.getElementById("replyToField").value = document.getElementById("customerEmail").value.trim();
+  document.getElementById("replyToField").value = email;
 
   button.disabled = true;
   button.classList.add("loading");
@@ -260,6 +268,12 @@ async function submitBooking(event) {
       // A native POST works when fetch is blocked by local-file or CORS rules.
       button.classList.remove("loading");
       form.submit();
+      return;
+    }
+    if (error.message.toLowerCase().includes("should be an email")) {
+      emailField.setCustomValidity("Enter a valid email address, for example you@example.com.");
+      emailField.reportValidity();
+      emailField.focus();
       return;
     }
     alert(`Booking send nahi ho paayi: ${error.message}`);
