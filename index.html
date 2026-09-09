@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GauravTech - Professional website development for schools, restaurants, businesses, hospitals and organizations.">
+<title>GauravTech — Digital Reality</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader-box">
+    <div class="loader-logo">G</div>
+    <div class="loader-line"><span></span></div>
+    <p>Building your digital reality...</p>
+  </div>
+</div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a class="logo" href="#home"><span class="logo-mark">G</span><span>Gaurav<span class="logo-tech">Tech</span></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Websites</a><a href="#process">Process</a><a href="#contact">Contact</a>
+      <button class="nav-book" onclick="openBooking()">Book Website</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-container">
+    <div class="hero-content reveal">
+      <div class="hero-badge"><span class="status-dot"></span> Available for new website projects</div>
+      <h1>Turn your <span class="gradient-text">idea</span> into a digital reality.</h1>
+      <p class="hero-description">Professional website development for <strong>schools, restaurants, businesses, hospitals and organizations</strong> — designed to look premium, work smoothly and grow with you.</p>
+      <div class="hero-buttons">
+        <button class="primary-btn" onclick="openBooking()">Start a Project <span class="btn-arrow">→</span></button>
+        <button class="secondary-btn" onclick="scrollToSection('portfolio')">Explore Websites</button>
+      </div>
+      <div class="hero-trust">
+        <div><strong>3+ Years</strong><span> Web Development</span></div>
+        <div><strong>4+ Years</strong><span> Web Designing</span></div>
+        <div><strong>1+ Years</strong><span> App Development</span></div>
+        <div><strong>100%</strong><span>Responsive</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="code-window">
+        <div class="window-top"><div class="window-dots"><span></span><span></span><span></span></div><div class="window-title">gauravtech / digital-reality</div></div>
+        <div class="code-content">
+          <div><span class="code-purple">const</span> <span class="code-blue">idea</span> = <span class="code-green">"your vision"</span>;</div>
+          <div><span class="code-purple">const</span> <span class="code-blue">design</span> = <span class="code-green">"premium"</span>;</div>
+          <div><span class="code-purple">const</span> <span class="code-blue">technology</span> = <span class="code-green">"modern"</span>;</div>
+          <br>
+          <div><span class="code-purple">function</span> <span class="code-pink">buildWebsite</span>() {</div>
+          <div class="indent"><span class="code-purple">return</span> <span class="code-blue">idea</span> + <span class="code-blue">design</span> + <span class="code-blue">technology</span>;</div>
+          <div>}</div>
+          <br>
+          <div class="typing-line"><span class="code-yellow">▶</span> <span class="code-green">Ready to build.</span></div>
+        </div>
+      </div>
+      <div class="visual-card card-one"><span>⚡</span><div><strong>Fast & Modern</strong><small>Built for real users</small></div></div>
+      <div class="visual-card card-two"><span>📱</span><div><strong>100% Responsive</strong><small>Every screen, every time</small></div></div>
+    </div>
+  </div>
+  <div class="scroll-indicator">Scroll to explore<div class="scroll-line"></div></div>
+</section>
+
+<section class="section" id="about">
+<div class="container">
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <div class="section-tag">ABOUT GAURAVTECH</div>
+      <h2>Not just websites. <span class="gradient-text">Digital reality.</span></h2>
+      <p>I'm Gaurav Kumar, a web developer and designer focused on creating professional websites that make ideas look real, credible and ready for the digital world.</p>
+      <p>From a school admission website to a business presence or a complete organization website, every project is built with attention to design, responsiveness and usability.</p>
+      <div class="quote-box"><span class="quote-mark">“</span><p>Your idea may start as a thought, but with the right design and technology, it can become something real.</p><strong>— Gaurav Kumar</strong></div>
+    </div>
+    <div class="stats-grid reveal">
+      <div class="stat-card"><strong>3+</strong><span>Years Web Development</span></div>
+      <div class="stat-card"><strong>4+</strong><span>Years Web Designing</span></div>
+      <div class="stat-card"><strong>100%</strong><span>Responsive Websites</span></div>
+      <div class="stat-card"><strong>1:1</strong><span>Personal Support</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section services-section" id="services">
+<div class="container">
+  <div class="section-heading center reveal"><div class="section-tag">WHAT I BUILD</div><h2>Websites made for <span class="gradient-text">real goals.</span></h2><p>Professional digital experiences tailored to the purpose of your organization or business.</p></div>
+  <div class="services-grid">
+    <article class="service-card reveal"><div class="service-icon">🏫</div><h3>School Websites</h3><p>Modern school websites with admission-focused pages, notices, information and a professional online presence.</p><div class="service-number">01</div></article>
+    <article class="service-card reveal"><div class="service-icon">🍽️</div><h3>Restaurant Websites</h3><p>Beautiful restaurant websites for menus, services, contact information and a strong digital first impression.</p><div class="service-number">02</div></article>
+    <article class="service-card reveal"><div class="service-icon">💼</div><h3>Business Websites</h3><p>Clean business websites that explain your services, build trust and help customers reach you.</p><div class="service-number">03</div></article>
+    <article class="service-card reveal"><div class="service-icon">🏥</div><h3>Hospital Websites</h3><p>Professional healthcare website structures for hospitals, clinics, departments and patient information.</p><div class="service-number">04</div></article>
+    <article class="service-card reveal"><div class="service-icon">🌐</div><h3>Other Websites</h3><p>Custom websites for projects and organizations that don't fit into a standard category.</p><div class="service-number">05</div></article>
+    <article class="service-card reveal"><div class="service-icon">✨</div><h3>Personal Support</h3><p>Direct project communication and support from idea to launch, without unnecessary complexity.</p><div class="service-number">06</div></article>
+  </div>
+</div>
+</section>
+
+<section class="section" id="portfolio">
+<div class="container">
+  <div class="section-heading center reveal"><div class="section-tag">SELECTED WORK</div><h2>Explore the <span class="gradient-text">websites.</span></h2><p>Open a live demo or book a website based on the project you like.</p></div>
+  <div class="portfolio-filters reveal">
+    <button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="school">🏫 School</button><button class="filter-btn" data-filter="restaurant">🍽️ Restaurant</button><button class="filter-btn" data-filter="business">💼 Business</button><button class="filter-btn" data-filter="hospital">🏥 Hospital</button><button class="filter-btn" data-filter="other">🌐 Other</button>
+  </div>
+  <div class="projects-grid" id="projectsGrid"></div>
+</div>
+</section>
+
+<section class="section why-section">
+<div class="container">
+  <div class="why-grid">
+    <div class="why-content reveal"><div class="section-tag">WHY GAURAVTECH</div><h2>Built with purpose, not just <span class="gradient-text">pixels.</span></h2><p>A website should make your work easier to understand, your organization look trustworthy and your visitors know what to do next.</p></div>
+    <div class="why-list reveal">
+      <div class="why-item"><span>01</span><div><h3>Premium Visuals</h3><p>Modern layouts, spacing, typography and motion designed to create a strong first impression.</p></div></div>
+      <div class="why-item"><span>02</span><div><h3>Responsive by Default</h3><p>Your website is designed to work across phones, tablets and desktops.</p></div></div>
+      <div class="why-item"><span>03</span><div><h3>Simple Communication</h3><p>Clear project flow from your idea to the final website.</p></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="process">
+<div class="container">
+  <div class="section-heading center reveal"><div class="section-tag">THE PROCESS</div><h2>Idea → Design → Develop → <span class="gradient-text">Grow</span></h2></div>
+  <div class="process-grid">
+    <div class="process-card reveal"><div class="process-number">01</div><h3>Understand</h3><p>We understand your organization, audience and what the website needs to achieve.</p></div>
+    <div class="process-card reveal"><div class="process-number">02</div><h3>Design</h3><p>The structure, visual direction and content flow are shaped into a premium interface.</p></div>
+    <div class="process-card reveal"><div class="process-number">03</div><h3>Develop</h3><p>The design becomes a responsive, functional website ready for real visitors.</p></div>
+    <div class="process-card reveal"><div class="process-number">04</div><h3>Grow</h3><p>Launch the website and continue improving your digital presence over time.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="cta-section">
+<div class="container"><div class="cta-box reveal"><div class="section-tag">HAVE AN IDEA?</div><h2>Let's turn it into <span class="gradient-text">something real.</span></h2><p>Tell me what you want to build and I'll get back to you personally.</p><button class="primary-btn large-btn" onclick="openBooking()">Book Your Website →</button></div></div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
+  <div class="contact-grid">
+    <div class="contact-content reveal">
+      <div class="section-tag">CONTACT</div>
+      <h2>Let's build your <span class="gradient-text">next website.</span></h2>
+      <p>Have a project in mind? Send the details through the booking form and Gaurav Kumar will reply soon.</p>
+
+      <a class="email-card" href="mailto:work.with.gaurav.000@gmail.com">
+        <span class="email-icon">✉️</span>
+        <div><small>Email</small><strong>work.with.gaurav.000@gmail.com</strong></div>
+      </a>
+
+      <a class="email-card" href="tel:+918521696439">
+        <span class="email-icon">📞</span>
+        <div><small>Contact Number</small><strong>8521696439</strong></div>
+      </a>
+
+      <a class="email-card" href="https://www.instagram.com/work.with.gaurav.000/" target="_blank" rel="noopener">
+        <span class="email-icon">📸</span>
+        <div><small>Instagram ID</small><strong>work.with.gaurav.000</strong></div>
+      </a>
+    </div>
+
+    <div class="contact-card reveal"><div class="contact-card-icon">🚀</div><h3>Ready when you are.</h3><p>Choose a website from the portfolio or start a custom project.</p><button class="primary-btn" onclick="openBooking()">Start Booking →</button></div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="logo"><span class="logo-mark">G</span><span>Gaurav<span class="logo-tech">Tech</span></span></div>
+      <p>Ideas → Design → Develop → Grow</p>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Websites</a>
+      <a href="#contact">Contact</a>
+      <a href="mailto:work.with.gaurav.000@gmail.com">Email</a>
+      <a href="tel:+918521696439">8521696439</a>
+      <a href="https://www.instagram.com/work.with.gaurav.000/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year"></span> GauravTech. All rights reserved.</span><span>Built by Gaurav Kumar</span></div>
+</div>
+</footer>
+
+<div class="modal-overlay" id="bookingModal" aria-hidden="true">
+  <div class="booking-modal">
+    <button class="modal-close" onclick="closeBooking()" aria-label="Close">×</button>
+    <div class="modal-header"><div class="section-tag">START A PROJECT</div><h2>Book your website.</h2><p>Fill the details below. Your information will be sent securely through Formspree.</p></div>
+    <form id="bookingForm" action="https://formspree.io/f/xljeozla" method="POST">
+      <input type="hidden" name="_subject" value="New GauravTech Website Booking">
+      <input type="hidden" name="_replyto" id="replyToField">
+      <input type="hidden" name="source" value="GauravTech Portfolio Website">
+      <input type="hidden" name="order_number" id="orderNumberField">
+      <input type="hidden" name="order_date" id="orderDateField">
+      <input type="hidden" name="order_time" id="orderTimeField">
+      <input type="hidden" name="website_price" id="websitePriceField">
+      <div class="form-grid">
+        <div class="form-group"><label for="fullName">Full Name *</label><input id="fullName" name="full_name" type="text" required placeholder="Your full name"></div>
+        <div class="form-group"><label for="organization">Organization / Authority Name</label><input id="organization" name="organization" type="text" placeholder="School, business, hospital..."></div>
+        <div class="form-group"><label for="phone">Contact Number *</label><input id="phone" name="phone" type="tel" required placeholder="+91 XXXXX XXXXX"></div>
+        <div class="form-group"><label for="customerEmail">Email *</label><input id="customerEmail" name="email" type="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Enter a valid email address, for example you@example.com" autocomplete="email" placeholder="you@example.com"></div>
+        <div class="form-group"><label for="websiteType">Website Category *</label><select id="websiteType" name="website_type" required><option value="">Select category</option><option value="school">School Website</option><option value="restaurant">Restaurant Website</option><option value="business">Business Website</option><option value="hospital">Hospital Website</option><option value="other">Other Website</option></select></div>
+        <div class="form-group full-width"><label for="projectSelect">Project *</label><select id="projectSelect" name="project" required><option value="">Select project</option></select></div>
+        <div class="form-group full-width"><label for="address">Address</label><input id="address" name="address" type="text" placeholder="City / organization address"></div>
+        <div class="form-group full-width"><label for="message">Additional Message</label><textarea id="message" name="message" placeholder="Tell me about your website requirements..."></textarea></div>
+      </div>
+      <button class="submit-btn" id="submitBtn" type="submit"><span class="submit-text">Send Booking Request →</span><span class="submit-loader"></span></button>
+      <p class="form-note">No price is shown in this form. The selected website price appears only on your submission receipt.</p>
+    </form>
+  </div>
+</div>
+
+<div class="modal-overlay" id="receiptModal" aria-hidden="true">
+  <div class="receipt-card">
+    <div class="receipt-success-icon">✓</div>
+    <h2>Booking Received</h2>
+    <p class="receipt-intro">Your request has been sent successfully.</p>
+    <div class="receipt">
+      <div class="receipt-header"><div class="receipt-logo">Gaurav<span>Tech</span></div><span>BOOKING RECEIPT</span></div>
+      <div class="receipt-divider"></div>
+      <div class="receipt-row"><span>Order No.</span><strong id="receiptOrder">—</strong></div>
+      <div class="receipt-row"><span>Date</span><strong id="receiptDate">—</strong></div>
+      <div class="receipt-row"><span>Time</span><strong id="receiptTime">—</strong></div>
+      <div class="receipt-row"><span>Customer</span><strong id="receiptName">—</strong></div>
+      <div class="receipt-row"><span>Organization</span><strong id="receiptOrganization">—</strong></div>
+      <div class="receipt-row"><span>Project</span><strong id="receiptProject">—</strong></div>
+      <div class="receipt-price-row"><div><span>Website Price</span><small>Selected project</small></div><strong id="receiptPrice">₹0</strong></div>
+      <div class="receipt-divider"></div>
+      <div class="receipt-total"><span>TOTAL</span><strong id="receiptTotal">₹0</strong></div>
+      <div class="receipt-message"><span>✓</span><p><strong>Thank you for choosing GauravTech.</strong><br>Gaurav Kumar will reply soon.</p></div>
+    </div>
+    <div class="receipt-buttons"><button class="secondary-btn" onclick="closeReceipt()">Close</button><button class="secondary-btn" onclick="downloadReceipt()">Download Receipt</button><button class="primary-btn" onclick="printReceipt()">Print Receipt</button></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
