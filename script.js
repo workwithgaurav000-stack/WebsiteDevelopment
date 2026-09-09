@@ -200,7 +200,7 @@ async function submitBooking(event) {
 
   emailField.value = email;
   emailField.setCustomValidity("");
-  if (!/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email)) {
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
     emailField.setCustomValidity("Enter a valid email address, for example you@example.com.");
   }
 
@@ -226,7 +226,6 @@ async function submitBooking(event) {
   document.getElementById("orderDateField").value = date;
   document.getElementById("orderTimeField").value = time;
   document.getElementById("websitePriceField").value = `₹${chosen.price.toLocaleString("en-IN")}`;
-  document.getElementById("replyToField").value = email;
 
   button.disabled = true;
   button.classList.add("loading");
