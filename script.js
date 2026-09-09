@@ -5,7 +5,7 @@
 const FORMSPREE_URL = "https://formspree.io/f/xljeozla";
 
 const projects = [
-  {id:"school",title:"Gaurav Demo School",category:"school",description:"Professional school website demo with modern design and admission-focused structure.",url:"https://gauravdemoschool.netlify.app/",icon:"🏫",price:4999},
+  {id:"school",title:"Gaurav Demo School",category:"school",description:"Professional school website demo with modern design and admission-focused structure.",url:"https://gauravdemoschool.netlify.app/",icon:"🏫",price:6999},
   {id:"business",title:"TCC Thakur Cyber Cafe",category:"business",description:"Professional business website demo for a cyber cafe and digital service center.",url:"https://tccthakurcybercafe.netlify.app/",icon:"💼",price:3999},
   {id:"stopwatch",title:"SW Stopwatch",category:"other",description:"Simple and modern online stopwatch web application.",url:"https://swstopwatch.netlify.app/",icon:"⏱️",price:3499},
   {id:"omr",title:"OMR Test",category:"other",description:"Online OMR test and quiz website with answer and result functionality.",url:"https://omr-test.netlify.app/",icon:"📝",price:3499},
