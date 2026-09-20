@@ -10,7 +10,7 @@ const projects = [
   {id:"stopwatch",title:"SW Stopwatch",category:"other",description:"Simple and modern online stopwatch web application.",url:"https://swstopwatch.netlify.app/",icon:"⏱️",price:3499},
   {id:"omr",title:"OMR Test",category:"other",description:"Online OMR test and quiz website with answer and result functionality.",url:"https://omr-test.netlify.app/",icon:"📝",price:3499},
   {id:"restaurant",title:"Restaurant Website",category:"restaurant",description:"Restaurant website demo will be added soon.",url:"",icon:"🍽️",price:4499,comingSoon:true},
-  {id:"hospital",title:"Hospital Website",category:"hospital",description:"Hospital and healthcare website demo will be added soon.",url:"",icon:"🏥",price:6999,comingSoon:true}
+  {id:"hospital",title:"Hospital Website",category:"hospital",description:"Hospital and healthcare website demo will be added soon.",url:"https://me-doctor-aditya.vercel.app/",icon:"🏥",price:6999,comingSoon:true}
 ];
 
 const categoryNames = {
